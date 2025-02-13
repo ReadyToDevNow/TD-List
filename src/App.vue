@@ -1,8 +1,8 @@
 <template>
   <header>
     <nav>
-      <router-link to="/form">Formulaire</router-link> |
-      <router-link to="/list">Liste</router-link>
+      <router-link to="/Form">Formulaire</router-link> |
+      <router-link to="/List">Liste</router-link>
     </nav>
   </header>
   <router-view></router-view>

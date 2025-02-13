@@ -9,8 +9,8 @@ const routes = [
     component: TodoForm,
   },
   {
-    path: '/list',
-    name: 'List',
+    path: '/List',
+    name: 'list',
     component: TodoList,
   },
 ]
