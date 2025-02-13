@@ -4,12 +4,12 @@ import TodoList from '@/components/TodoList.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/Form',
     name: 'form',
     component: TodoForm,
   },
   {
-    path: '/',
+    path: '/list',
     name: 'List',
     component: TodoList,
   },
