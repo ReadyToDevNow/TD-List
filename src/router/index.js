@@ -1,8 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import TodoForm from '@/components/TodoForm.vue'
 import TodoList from '@/components/TodoList.vue'
+import LandingPage from '@/components/LandingPage.vue'
 
 const routes = [
+  {
+    path: '/Accueil',
+    name: 'Accueil',
+    component: LandingPage,
+  },
   {
     path: '/Form',
     name: 'form',
