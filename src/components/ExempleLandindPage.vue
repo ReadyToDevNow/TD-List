@@ -1,15 +1,15 @@
 <template>
-  <div class="">
-    <header>
-      <h1>Bienvenue sur TodoList</h1>
-      <p>Organisez votre vie, une tâche à la fois.</p>
+  <div class="min-h-screen bg-gray-100 flex flex-col justify-center items-center">
+    <header class="text-center mb-8">
+      <h1 class="text-4xl font-bold text-blue-600">Bienvenue sur TodoList</h1>
+      <p class="text-lg text-gray-600">Organisez votre vie, une tâche à la fois.</p>
     </header>
 
-    <section>
-      <div>
-        <h2></h2>
+    <section class="w-full max-w-md">
+      <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <h2 class="text-xl font-semibold mb-4">Commencez dès maintenant</h2>
         <form @submit.prevent="startTodoList">
-          <div>
+          <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
               Votre Nom
             </label>
@@ -21,7 +21,7 @@
               v-model="username"
             />
           </div>
-          <div>
+          <div class="flex items-center justify-between">
             <button
               class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"
@@ -33,7 +33,7 @@
       </div>
     </section>
 
-    <footer>
+    <footer class="mt-8 text-center text-sm text-gray-500">
       <p>© 2023 TodoList. Tous droits réservés.</p>
     </footer>
   </div>
@@ -50,7 +50,7 @@ function startTodoList() {
   if (username.value.trim()) {
     // Ici, vous pouvez enregistrer le nom de l'utilisateur dans le store ou dans le localStorage
     // puis rediriger vers la page de la liste de tâches
-    router.push({ name: 'form' })
+    router.push({ name: 'list' })
   }
 }
 </script>
