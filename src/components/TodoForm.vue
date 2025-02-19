@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="min-h-screen bg-gray-200 flex flex-col justify-center items-center">
     <form @submit.prevent="addTodo">
       <input
         v-model="todo"
@@ -8,7 +8,7 @@
       />
       <button
         type="submit"
-        class="bg-blue-500 rounded text-white font-bold py-0.5 px-1 focus:outline-none focus:shadow-outline"
+        class="bg-blue-500 rounded text-white font-bold py-0.5 px-1 focus:outline-none focus:shadow-outline cursor-pointer"
       >
         Ajouter
       </button>
