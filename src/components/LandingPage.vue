@@ -1,20 +1,20 @@
 <template>
-  <div class="">
-    <header>
-      <h1>Bienvenue sur TodoList</h1>
-      <p>Organisez votre vie, une tâche à la fois.</p>
+  <div class="min-h-screen bg-gray-200 flex flex-col justify-center items-center">
+    <header class="text-center mb-8">
+      <h1 class="text-4xl font-bold text-blue-600">Bienvenue sur TodoList</h1>
+      <p class="text-lg text-gray-600">Organisez votre vie, une tâche à la fois.</p>
     </header>
 
-    <section>
-      <div>
-        <h2></h2>
+    <section class="w-full max-w-md">
+      <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <h2 class="text-xl font-semibold mb-4">Commencez dès maintenant</h2>
         <form @submit.prevent="startTodoList">
           <div>
             <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
               Votre Nom
             </label>
             <input
-              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              class="shadow appearance-none border rounded w-full mb-1.5 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="username"
               type="text"
               placeholder="Entrez votre nom"
@@ -34,7 +34,7 @@
     </section>
 
     <footer>
-      <p>© 2023 TodoList. Tous droits réservés.</p>
+      <p>© 2025 TodoList. Tous droits réservés.</p>
     </footer>
   </div>
 </template>
