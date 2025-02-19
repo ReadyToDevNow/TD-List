@@ -34,7 +34,7 @@
     </section>
 
     <footer>
-      <p>© 2025 TodoList. Tous droits réservés.</p>
+      <p>© 2025 WebForYou. Tous droits réservés.</p>
     </footer>
   </div>
 </template>
