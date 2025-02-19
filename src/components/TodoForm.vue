@@ -1,7 +1,12 @@
 <template>
   <form @submit.prevent="addTodo">
     <input v-model="todo" placeholder="Ajouter une tâche" />
-    <button type="submit">Ajouter</button>
+    <button
+      type="submit"
+      class="bg-blue-500 rounded text-white font-bold py-0.5 px-1 focus:outline-none focus:shadow-outline"
+    >
+      Ajouter
+    </button>
   </form>
 </template>
 
